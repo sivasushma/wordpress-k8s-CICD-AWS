@@ -18,22 +18,22 @@ spec:
         run: wordpress
     spec:
       containers:
-      - image: <DOCKER_IMAGE_REPOSITORY>/<DOCKER_IMAGE_NAME>:<DOCKER_IMAGE_VERSION>
+      - image: 829383579366.dkr.ecr.us-east-2.amazonaws.com/sample:latest
         name: wordpress
         ports:
         - containerPort: 80
         resources: {}
-        env:
-        - name: WORDPRESS_DB_HOST
-          value: <WORDPRESS_DB_HOST>
-        - name: WORDPRESS_DB_USER
-          value: "root"
-        - name: WORDPRESS_DB_PASSWORD
-          value: <WORDPRESS_DB_PASSWORD>
-        - name: WORDPRESS_DATABASE_NAME
-          value: "wordpress"
-        - name: MEMCACHED_HOST
-          value: "tcp://<MEMCACHED_HOST>" 
+  #      env:
+  #      - name: WORDPRESS_DB_HOST
+  #        value: <WORDPRESS_DB_HOST>
+  #      - name: WORDPRESS_DB_USER
+  #        value: "root"
+   #     - name: WORDPRESS_DB_PASSWORD
+   #       value: <WORDPRESS_DB_PASSWORD>
+   #     - name: WORDPRESS_DATABASE_NAME
+  #        value: "wordpress"
+  #      - name: MEMCACHED_HOST
+  #        value: "tcp://<MEMCACHED_HOST>" 
 
 ---
 apiVersion: v1
