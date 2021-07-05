@@ -18,7 +18,7 @@ spec:
         run: wordpress
     spec:
       containers:
-      - image: 829383579366.dkr.ecr.us-east-2.amazonaws.com/sample:latest
+      - image: tomcat
         name: wordpress
         ports:
         - containerPort: 80
